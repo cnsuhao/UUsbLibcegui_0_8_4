@@ -130,7 +130,7 @@ static struct
                         {
                             (encoded_char*)"RichStyle Icons font",
                                 (encoded_char*)"RichStyle-22",
-                                (encoded_char*)"+ - ? B I W Y f n t ℹ ⇦ ⇧ ⇨ ⇩ ⌘ ☎ ☐ ☑ ⚖ ⚙ ⚠ ⛏ ✎ ✑ ✓ ✔ ✕ ✖ ❝ ❞ ➡ ⬀ ⬁ ⬂ ⬃ ⬅ ⬆ ⬇ ⬈ ⬉ ⬊ ⬋                       "
+                                (encoded_char*)"1111"
                             },  
                             {
                                 (encoded_char*)"Old Runic writing using Futhark Adapted font",
@@ -143,7 +143,7 @@ static struct
                                     (encoded_char*)"  \n\n\n"
                                     "         \n"
                                     "         \n"
-                                    "  "
+                                    "    "
                                 },
                                 {
                                     (encoded_char*)"Pixel style font using Mizufalp font",

@@ -688,7 +688,7 @@ void GameMenuDemo::updateIntroText()
     if(blinkTime > 0.55 || d_timeSinceStart < blinkStartDelay || d_currentWriteFocus != WF_BotBar)
         finalText += "[colour='00000000']";
 
-    finalText += reinterpret_cast<const encoded_char*>("❚");
+    finalText += reinterpret_cast<const encoded_char*>("1");
 
     d_botBarLabel->setText(finalText);
 }
@@ -713,7 +713,7 @@ void GameMenuDemo::updateLoginWelcomeText(float passedTime)
     if(blinkTime > 0.55 || d_currentWriteFocus != WF_TopBar)
         finalText += "[colour='00000000']";
 
-    finalText += reinterpret_cast<const encoded_char*>("❚");
+    finalText += reinterpret_cast<const encoded_char*>("1");
 
     d_topBarLabel->setText(finalText);
 }
@@ -744,7 +744,7 @@ void GameMenuDemo::updateLoginStartButtonText(float passedTime)
     if(d_timeSinceLoginAccepted >= writeDelay)
         d_currentWriteFocus = WF_BotBar;
 
-    finalText += reinterpret_cast<const encoded_char*>("❚");
+    finalText += reinterpret_cast<const encoded_char*>("1");
 
     d_botBarLabel->setText(finalText);
 }
