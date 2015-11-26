@@ -251,7 +251,7 @@
     <CustomBuild Include="..\..\samples_framework\CMakeLists.txt">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/OpenSourceLib/cegui_0_8_4/trunk/samples_framework/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"D:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B.. --check-stamp-file D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp
+D:\software\cmake-2.8.12.2-win32-x86\bin\cmake.exe -H../.. -B.. --check-stamp-file D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -263,7 +263,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/OpenSourceLib/cegui_0_8_4/trunk/samples_framework/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"D:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B.. --check-stamp-file D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp
+D:\software\cmake-2.8.12.2-win32-x86\bin\cmake.exe -H../.. -B.. --check-stamp-file D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -275,7 +275,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/OpenSourceLib/cegui_0_8_4/trunk/samples_framework/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"D:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B.. --check-stamp-file D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp
+D:\software\cmake-2.8.12.2-win32-x86\bin\cmake.exe -H../.. -B.. --check-stamp-file D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -287,7 +287,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/OpenSourceLib/cegui_0_8_4/trunk/samples_framework/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"D:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B.. --check-stamp-file D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp
+D:\software\cmake-2.8.12.2-win32-x86\bin\cmake.exe -H../.. -B.. --check-stamp-file D:\OpenSourceLib\cegui_0_8_4\trunk\build\samples_framework\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
