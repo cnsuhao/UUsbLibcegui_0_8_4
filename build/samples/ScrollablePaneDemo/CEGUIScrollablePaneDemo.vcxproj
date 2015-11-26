@@ -109,7 +109,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\CEGUIBase-0_d.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\freetype_d.lib;winmm.lib;DbgHelp.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\CEGUIBase-0_d.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\freetype_d.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\pcre_d.lib;winmm.lib;DbgHelp.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUIScrollablePaneDemo_d.lib</ImportLibrary>
@@ -151,7 +151,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\CEGUIBase-0.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\freetype_d.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\CEGUIBase-0.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\freetype_d.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\pcre_d.lib;winmm.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUIScrollablePaneDemo.lib</ImportLibrary>
@@ -193,7 +193,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\CEGUIBase-0.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\freetype_d.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\CEGUIBase-0.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\freetype_d.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\pcre_d.lib;winmm.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUIScrollablePaneDemo.lib</ImportLibrary>
@@ -235,7 +235,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\CEGUIBase-0.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\freetype_d.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\CEGUIBase-0.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\freetype_d.lib;..\..\..\cegui-deps-0.8.x-src\build\dependencies\lib\dynamic\pcre_d.lib;winmm.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUIScrollablePaneDemo.lib</ImportLibrary>
