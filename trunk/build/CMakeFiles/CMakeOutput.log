@@ -1,0 +1,205 @@
+The system is: Windows - 6.1 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: CompilerIdC, Configuration: Debug Win32 ------
+1>Build started 2015-11-26 21:21:10.
+1>InitializeBuildStatus:
+1>  Creating "Debug\CompilerIdC.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  CMakeCCompilerId.c
+1>Link:
+1>  CompilerIdC.vcxproj -> D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\2.8.12.2\CompilerIdC\.\CompilerIdC.exe
+1>PostBuildEvent:
+1>  CMAKE_C_COMPILER=D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "Debug\CompilerIdC.unsuccessfulbuild".
+1>  Touching "Debug\CompilerIdC.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:01.31
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj.user"
+
+The C compiler identification is MSVC, found in "D:/OpenSourceLib/cegui_0_8_4/trunk/build/CMakeFiles/2.8.12.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: CompilerIdCXX, Configuration: Debug Win32 ------
+1>Build started 2015-11-26 21:21:13.
+1>InitializeBuildStatus:
+1>  Creating "Debug\CompilerIdCXX.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  CMakeCXXCompilerId.cpp
+1>Link:
+1>  CompilerIdCXX.vcxproj -> D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\2.8.12.2\CompilerIdCXX\.\CompilerIdCXX.exe
+1>PostBuildEvent:
+1>  CMAKE_CXX_COMPILER=D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "Debug\CompilerIdCXX.unsuccessfulbuild".
+1>  Touching "Debug\CompilerIdCXX.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:06.32
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj.user"
+
+The CXX compiler identification is MSVC, found in "D:/OpenSourceLib/cegui_0_8_4/trunk/build/CMakeFiles/2.8.12.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/OpenSourceLib/cegui_0_8_4/trunk/build/CMakeFiles/CMakeTmp
+
+Run Build Command:D:\PROGRA~2\MICROS~1.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec1051665070
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec1051665070, Configuration: Debug Win32 ------
+1>Build started 2015-11-26 21:21:22.
+1>PrepareForBuild:
+1>  Creating directory "D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\CMakeTmp\Debug\".
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec1051665070.dir\Debug\cmTryCompileExec1051665070.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1051665070.dir\Debug\\" /Fd"cmTryCompileExec1051665070.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt testCCompiler.c
+1>  
+1>  testCCompiler.c
+1>LinkEmbedManifest:
+1>  cmTryCompileExec1051665070.vcxproj -> D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1051665070.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec1051665070.dir\Debug\cmTryCompileExec1051665070.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec1051665070.dir\Debug\cmTryCompileExec1051665070.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:02.33
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/OpenSourceLib/cegui_0_8_4/trunk/build/CMakeFiles/CMakeTmp
+
+Run Build Command:D:\PROGRA~2\MICROS~1.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec2867471074
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec2867471074, Configuration: Debug Win32 ------
+1>Build started 2015-11-26 21:21:27.
+1>PrepareForBuild:
+1>  Creating directory "D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\CMakeTmp\Debug\".
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec2867471074.dir\Debug\cmTryCompileExec2867471074.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2867471074.dir\Debug\\" /Fd"cmTryCompileExec2867471074.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt "..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+1>  
+1>  CMakeCCompilerABI.c
+1>LinkEmbedManifest:
+1>  cmTryCompileExec2867471074.vcxproj -> D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2867471074.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec2867471074.dir\Debug\cmTryCompileExec2867471074.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec2867471074.dir\Debug\cmTryCompileExec2867471074.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:01.86
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/OpenSourceLib/cegui_0_8_4/trunk/build/CMakeFiles/CMakeTmp
+
+Run Build Command:D:\PROGRA~2\MICROS~1.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec3139515992
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec3139515992, Configuration: Debug Win32 ------
+1>Build started 2015-11-26 21:21:31.
+1>PrepareForBuild:
+1>  Creating directory "D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\CMakeTmp\Debug\".
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec3139515992.dir\Debug\cmTryCompileExec3139515992.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3139515992.dir\Debug\\" /Fd"cmTryCompileExec3139515992.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt testCXXCompiler.cxx
+1>  
+1>  testCXXCompiler.cxx
+1>LinkEmbedManifest:
+1>  cmTryCompileExec3139515992.vcxproj -> D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3139515992.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec3139515992.dir\Debug\cmTryCompileExec3139515992.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec3139515992.dir\Debug\cmTryCompileExec3139515992.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:01.57
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/OpenSourceLib/cegui_0_8_4/trunk/build/CMakeFiles/CMakeTmp
+
+Run Build Command:D:\PROGRA~2\MICROS~1.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec3577365915
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec3577365915, Configuration: Debug Win32 ------
+1>Build started 2015-11-26 21:21:34.
+1>PrepareForBuild:
+1>  Creating directory "D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\CMakeTmp\Debug\".
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec3577365915.dir\Debug\cmTryCompileExec3577365915.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3577365915.dir\Debug\\" /Fd"cmTryCompileExec3577365915.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+1>  
+1>  CMakeCXXCompilerABI.cpp
+1>LinkEmbedManifest:
+1>  cmTryCompileExec3577365915.vcxproj -> D:\OpenSourceLib\cegui_0_8_4\trunk\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3577365915.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec3577365915.dir\Debug\cmTryCompileExec3577365915.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec3577365915.dir\Debug\cmTryCompileExec3577365915.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:01.36
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
