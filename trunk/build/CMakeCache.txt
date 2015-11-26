@@ -39,7 +39,7 @@ Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG:FILEPATH=Boost_UNIT_TEST_FRAMEWORK_LIBRA
 Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE:FILEPATH=Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE-NOTFOUND
 
 //Dependencies for the target
-CEGUIBase-0_LIB_DEPENDS:STATIC=optimized;D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/freetype_d.lib;debug;D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/freetype_d.lib;general;winmm;debug;DbgHelp;
+CEGUIBase-0_LIB_DEPENDS:STATIC=optimized;D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/freetype_d.lib;debug;D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/freetype_d.lib;optimized;D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/pcre_d.lib;debug;D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/pcre_d.lib;general;winmm;debug;DbgHelp;
 
 //Dependencies for the target
 CEGUICommonDialogs-0_LIB_DEPENDS:STATIC=general;CEGUIBase-0;
@@ -881,7 +881,7 @@ PCRE_DEFINITIONS_STATIC:STRING=PCRE_STATIC
 PCRE_H_PATH:PATH=D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/include
 
 //Path to a library.
-PCRE_LIB:FILEPATH=PCRE_LIB-NOTFOUND
+PCRE_LIB:FILEPATH=D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/pcre_d.lib
 
 //Path to a library.
 PCRE_LIB_DBG:FILEPATH=D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/pcre_d.lib
@@ -1260,6 +1260,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_GLM:INTERNAL=[D:/OpenSourceLib/cegui_0_8_4/trunk/ce
 FIND_PACKAGE_MESSAGE_DETAILS_LibXml2:INTERNAL=[D:/OpenSourceLib/cegui-0.8.4/trunk/dependencies/libxml2-2.7.8.win32/lib/libxml2.lib][D:/OpenSourceLib/cegui_0_8_4/trunk/dependencies/libxml2-2.7.8.win32/include][v2.7.8()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][v()]
+//Details about finding PCRE
+FIND_PACKAGE_MESSAGE_DETAILS_PCRE:INTERNAL=[D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/pcre_d.lib][D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/lib/dynamic/pcre_d.lib][D:/OpenSourceLib/cegui_0_8_4/trunk/cegui-deps-0.8.x-src/build/dependencies/include][v()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[D:/Program Files/Python27/python.exe][v2.7.10()]
 //Details about finding PythonLibs
