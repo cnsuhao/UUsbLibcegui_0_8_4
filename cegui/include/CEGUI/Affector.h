@@ -69,7 +69,11 @@ public:
         /** saves a base value after the animation is started and applies
          * by multiplying this base value with key frame floats
          */
-        AM_RelativeMultiply
+        AM_RelativeMultiply,
+
+		// add by xiew
+		AM_AbsolutAdd,
+		AM_RelativeAdd
     };
 
     /** internal constructor, please construct Affectors via

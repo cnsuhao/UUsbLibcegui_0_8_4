@@ -346,48 +346,70 @@ void Affector::apply(AnimationInstance* instance)
     const float interpolationPosition =
         right->alterInterpolationPosition(
             leftDistance / (leftDistance + rightDistance));
-
+	std::string targetPropertyStr = CEGUI::CEGUIStringToStdString(d_targetProperty);
     // absolute application method
-    if (d_applicationMethod == AM_Absolute)
-    {
-        const String result = d_interpolator->interpolateAbsolute(
-                                  left->getValueForAnimation(instance),
-                                  right->getValueForAnimation(instance),
-                                  interpolationPosition);
+	switch (d_applicationMethod)
+	{
+	case CEGUI::Affector::AM_Absolute:
+		{
+			const String result = d_interpolator->interpolateAbsolute(
+				left->getValueForAnimation(instance),
+				right->getValueForAnimation(instance),
+				interpolationPosition);
+			std::string stdResult = CEGUI::CEGUIStringToStdString(result);
+			target->setProperty(d_targetProperty, result);
+		}
+		break;
+	case CEGUI::Affector::AM_Relative:
+		{
+			const String& base = instance->getSavedPropertyValue(getTargetProperty());
 
-        target->setProperty(d_targetProperty, result);
-    }
-    // relative application method
-    else if (d_applicationMethod == AM_Relative)
-    {
-        const String& base = instance->getSavedPropertyValue(getTargetProperty());
+			const String result = d_interpolator->interpolateRelative(
+				base,
+				left->getValueForAnimation(instance),
+				right->getValueForAnimation(instance),
+				interpolationPosition);
 
-        const String result = d_interpolator->interpolateRelative(
-                                  base,
-                                  left->getValueForAnimation(instance),
-                                  right->getValueForAnimation(instance),
-                                  interpolationPosition);
+			target->setProperty(d_targetProperty, result);
+		}
+		break;
+	case CEGUI::Affector::AM_RelativeMultiply:
+		{
+			const String& base = instance->getSavedPropertyValue(getTargetProperty());
 
-        target->setProperty(d_targetProperty, result);
-    }
-    // relative multiply application method
-    else if (d_applicationMethod == AM_RelativeMultiply)
-    {
-        const String& base = instance->getSavedPropertyValue(getTargetProperty());
+			const String result = d_interpolator->interpolateRelativeMultiply(
+				base,
+				left->getValueForAnimation(instance),
+				right->getValueForAnimation(instance),
+				interpolationPosition);
 
-        const String result = d_interpolator->interpolateRelativeMultiply(
-                                  base,
-                                  left->getValueForAnimation(instance),
-                                  right->getValueForAnimation(instance),
-                                  interpolationPosition);
-
-        target->setProperty(d_targetProperty, result);
-    }
-    // todo: more application methods?
-    else
-    {
-        assert(0);
-    }
+			target->setProperty(d_targetProperty, result);
+		}
+		break;
+	case CEGUI::Affector::AM_AbsolutAdd:
+		{
+			const String result = d_interpolator->interpolateAbsolute(
+				left->getValueForAnimation(instance),
+				right->getValueForAnimation(instance),
+				interpolationPosition);
+			std::string stdResult = CEGUI::CEGUIStringToStdString(result);
+			target->setProperty(d_targetProperty, result);
+		}
+		break;
+	case CEGUI::Affector::AM_RelativeAdd:
+		{
+			const String result = d_interpolator->interpolateAbsolute(
+				left->getValueForAnimation(instance),
+				right->getValueForAnimation(instance),
+				interpolationPosition);
+			std::string stdResult = CEGUI::CEGUIStringToStdString(result);
+			target->setProperty(d_targetProperty, result);
+		}
+		break;
+	default:
+		assert(0);
+		break;
+	}
 }
 
 void Affector::writeXMLToStream(XMLSerializer& xml_stream) const

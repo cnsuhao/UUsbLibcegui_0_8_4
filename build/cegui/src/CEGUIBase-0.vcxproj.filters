@@ -1118,12 +1118,6 @@
     <CustomBuild Include="..\..\..\cegui\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4E89A8E2-E4F6-497F-9845-3209F22B7EE8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{4028CD77-1D56-4067-B56D-5EE138141321}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\widget">
       <UniqueIdentifier>{084C9C62-22B5-4102-B68A-9F9D3AB0C544}</UniqueIdentifier>
     </Filter>
@@ -1135,6 +1129,12 @@
     </Filter>
     <Filter Include="Header Files\falagard">
       <UniqueIdentifier>{F004F918-6A67-4419-89D7-B4DFA1C5E131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4E89A8E2-E4F6-497F-9845-3209F22B7EE8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4028CD77-1D56-4067-B56D-5EE138141321}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

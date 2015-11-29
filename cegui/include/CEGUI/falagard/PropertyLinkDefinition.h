@@ -66,6 +66,7 @@ public:
     {
         // add initial target if it was specified via constructor
         // (typically meaning it came via XML attributes)
+		std::string targetStr = CEGUIStringToStdString(targetProperty);
         if (!widgetName.empty() || !targetProperty.empty())
             addLinkTarget(widgetName, targetProperty);
     }
