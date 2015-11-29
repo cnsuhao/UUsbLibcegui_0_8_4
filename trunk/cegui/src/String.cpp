@@ -448,6 +448,22 @@ void	swap(String& str1, String& str2)
 	str1.swap(str2);
 }
 
+
+std::string CEGUIStringToStdString(const CEGUI::String& ceguiString)
+{
+	char* asciiBuffer = (char*)malloc((ceguiString.size() + 1)*sizeof(char));
+	memset(asciiBuffer, 0xFF, ceguiString.size() + 1);
+	for (int i = 0; i < ceguiString.size(); ++i)
+	{
+		asciiBuffer[i] &= ceguiString[i];
+		// 上面就是调用的*(ceguiString.ptr() + i);
+	}
+	asciiBuffer[ceguiString.size()] = 0;
+	std::string result(asciiBuffer);
+	free(asciiBuffer);
+	return result;
+}
+
 } // End of  CEGUI namespace section
 
 #endif

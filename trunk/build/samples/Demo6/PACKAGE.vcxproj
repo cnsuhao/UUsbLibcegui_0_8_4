@@ -74,7 +74,7 @@ cd D:\OpenSourceLib\cegui_0_8_4\trunk\build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-D:\software\cmake-2.8.12.2-win32-x86\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
+D:\tools\cmake-2.8.12.2-win32-x86\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -100,7 +100,7 @@ cd D:\OpenSourceLib\cegui_0_8_4\trunk\build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-D:\software\cmake-2.8.12.2-win32-x86\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
+D:\tools\cmake-2.8.12.2-win32-x86\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -126,7 +126,7 @@ cd D:\OpenSourceLib\cegui_0_8_4\trunk\build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-D:\software\cmake-2.8.12.2-win32-x86\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
+D:\tools\cmake-2.8.12.2-win32-x86\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -152,7 +152,7 @@ cd D:\OpenSourceLib\cegui_0_8_4\trunk\build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-D:\software\cmake-2.8.12.2-win32-x86\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
+D:\tools\cmake-2.8.12.2-win32-x86\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

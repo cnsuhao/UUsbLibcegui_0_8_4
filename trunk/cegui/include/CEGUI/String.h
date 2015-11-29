@@ -5628,6 +5628,8 @@ struct StringFastLessCompare
 
 #endif
 
+std::string CEGUIEXPORT CEGUIStringToStdString(const CEGUI::String& ceguiString);
+
 } // End of  CEGUI namespace section
 
 

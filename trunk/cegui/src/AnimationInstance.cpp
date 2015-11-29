@@ -324,6 +324,7 @@ void AnimationInstance::step(float delta)
 
     if (delta < 0.0f)
     {
+		std::string animationName = CEGUIStringToStdString(this->getDefinition()->getName());
         CEGUI_THROW(InvalidRequestException(
                         "You can't step the Animation Instance with negative "
                         "delta! You can't reverse the flow of time, stop "
@@ -474,7 +475,8 @@ bool AnimationInstance::handleTogglePause(const CEGUI::EventArgs&)
 void AnimationInstance::savePropertyValue(const String& propertyName)
 {
     assert(d_target);
-
+	std::string propertyNameStr = CEGUIStringToStdString(propertyName);
+	std::string propertyStr = CEGUIStringToStdString(d_target->getProperty(propertyName));
     d_savedPropertyValues[propertyName] = d_target->getProperty(propertyName);
 }
 
@@ -487,8 +489,8 @@ void AnimationInstance::purgeSavedPropertyValues(void)
 //----------------------------------------------------------------------------//
 const String& AnimationInstance::getSavedPropertyValue(const String& propertyName)
 {
+	std::string propertyNameStr = CEGUIStringToStdString(propertyName);
     PropertyValueMap::iterator it = d_savedPropertyValues.find(propertyName);
-
     if (it == d_savedPropertyValues.end())
     {
         // even though we explicitly save all used property values when
@@ -498,7 +500,7 @@ const String& AnimationInstance::getSavedPropertyValue(const String& propertyNam
         savePropertyValue(propertyName);
         return getSavedPropertyValue(propertyName);
     }
-
+	std::string propertyValue = CEGUIStringToStdString(it->second);
     return it->second;
 }
 
