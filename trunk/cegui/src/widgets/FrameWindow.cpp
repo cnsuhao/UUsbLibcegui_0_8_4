@@ -68,6 +68,8 @@ const String FrameWindow::CloseButtonName( "__auto_closebutton__" );
 FrameWindow::FrameWindow(const String& type, const String& name) :
 	Window(type, name)
 {
+	std::string stdType = CEGUIStringToStdString(type);
+	std::string stdName = CEGUIStringToStdString(name);
 	d_frameEnabled		= true;
 	d_rollupEnabled		= true;
 	d_rolledup			= false;
