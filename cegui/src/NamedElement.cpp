@@ -140,6 +140,7 @@ bool NamedElement::isAncestor(const String& name) const
 //----------------------------------------------------------------------------//
 NamedElement* NamedElement::getChildElement(const String& name_path) const
 {
+    std::string stdNamePath = CEGUIStringToStdString(name_path);
     NamedElement* e = getChildByNamePath_impl(name_path);
 
     if (e)
