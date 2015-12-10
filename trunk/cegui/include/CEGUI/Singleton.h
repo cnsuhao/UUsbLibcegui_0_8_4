@@ -75,7 +75,10 @@ public:
    ~Singleton( void )
         {  assert( ms_Singleton );  ms_Singleton = 0;  }
     static T& getSingleton( void )
-        {  assert( ms_Singleton );  return ( *ms_Singleton );  }
+    {
+        assert(ms_Singleton);
+        return (*ms_Singleton);
+    }
     static T* getSingletonPtr( void )
         {  return ( ms_Singleton );  }
 
