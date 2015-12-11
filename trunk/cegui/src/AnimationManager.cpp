@@ -342,9 +342,7 @@ size_t AnimationManager::getNumAnimationInstances() const
 void AnimationManager::autoStepInstances(float delta)
 {
     int i = 0;
-    auto itend = d_animationInstances.end();
-    auto itLast = d_animationInstances.rbegin();
-    auto itNext = itLast++;
+
     for (AnimationInstanceMap::const_iterator it = d_animationInstances.begin();
          it != d_animationInstances.end(); ++it)
     {
