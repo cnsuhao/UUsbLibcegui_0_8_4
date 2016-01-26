@@ -85,6 +85,9 @@
     <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Tree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\DashBoardRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\Button.h">
@@ -169,6 +172,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\DashBoardRenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

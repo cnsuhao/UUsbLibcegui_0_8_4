@@ -111,6 +111,7 @@ void WindowRendererManager::addFactory(WindowRendererFactory* wr)
     {
         return;
     }
+    std::string factoryName = CEGUIStringToStdString(wr->getName());
     if (d_wrReg.insert(std::make_pair(wr->getName(), wr)).second == false)
     {
         CEGUI_THROW(AlreadyExistsException("A WindowRendererFactory named '"+wr->getName()+"' already exist"));

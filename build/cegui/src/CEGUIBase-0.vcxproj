@@ -49,35 +49,36 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CEGUIBase-0.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CEGUIBase-0_d</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CEGUIBase-0.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CEGUIBase-0</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CEGUIBase-0.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CEGUIBase-0</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CEGUIBase-0.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CEGUIBase-0</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CEGUIBase-0.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CEGUIBase-0_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CEGUIBase-0.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CEGUIBase-0</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CEGUIBase-0.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CEGUIBase-0</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CEGUIBase-0.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CEGUIBase-0</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>D:\OpenSourceLib\cegui_0_8_4\trunk\build\cegui\include;D:\OpenSourceLib\cegui_0_8_4\trunk\cegui\include;D:\OpenSourceLib\cegui_0_8_4\trunk\cegui-deps-0.8.x-src\build\dependencies\include;D:\OpenSourceLib\cegui_0_8_4\trunk\cegui-deps-0.8.x-src\build\dependencies\include\freetype\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -115,7 +116,8 @@
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUIBase-0_d.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/OpenSourceLib/cegui_0_8_4/trunk/build/bin/CEGUIBase-0_d.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -133,7 +135,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="Release";CEGUIBASE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -157,7 +160,8 @@
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUIBase-0.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/OpenSourceLib/cegui_0_8_4/trunk/build/bin/CEGUIBase-0.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -175,7 +179,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="MinSizeRel";CEGUIBASE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -199,7 +204,8 @@
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUIBase-0.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/OpenSourceLib/cegui_0_8_4/trunk/build/bin/CEGUIBase-0.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -241,7 +247,8 @@
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUIBase-0.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/OpenSourceLib/cegui_0_8_4/trunk/build/bin/CEGUIBase-0.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -428,6 +435,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\..\..\cegui\include\CEGUI\UDim.h" />
     <ClInclude Include="..\..\..\cegui\include\CEGUI\Vector.h" />
     <ClInclude Include="..\..\..\cegui\include\CEGUI\Vertex.h" />
+    <ClInclude Include="..\..\..\cegui\include\CEGUI\widgets\DashBoard.h" />
     <ClInclude Include="..\..\..\cegui\include\CEGUI\Win32StringTranscoder.h" />
     <ClInclude Include="..\..\..\cegui\include\CEGUI\Window.h" />
     <ClInclude Include="..\..\..\cegui\include\CEGUI\WindowFactory.h" />
@@ -514,164 +522,165 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\..\..\cegui\include\CEGUI\falagard\WidgetLookManager.h" />
     <ClInclude Include="..\..\..\cegui\include\CEGUI\falagard\XMLEnumHelper.h" />
     <ClInclude Include="..\..\..\cegui\include\CEGUI\falagard\XMLHandler.h" />
-    <ClCompile Include="..\..\..\cegui\src\Affector.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Animation.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\AnimationInstance.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\AnimationManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Animation_xmlHandler.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Base.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\BasicImage.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\BasicRenderedStringParser.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\BidiVisualMapping.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\BoundSlot.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\CentredRenderedString.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\ChainedXMLHandler.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Clipboard.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Colour.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\ColourRect.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\CompositeResourceProvider.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Config_xmlHandler.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\CoordConverter.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\DataContainer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\DefaultLogger.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\DefaultRenderedStringParser.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\DefaultResourceProvider.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\DynamicModule.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Element.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Event.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\EventArgs.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\EventSet.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Exceptions.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\FactoryModule.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\FactoryRegisterer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Font.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\FontManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Font_xmlHandler.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\FormattedRenderedString.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\FreeTypeFont.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\GeometryBuffer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\GlobalEventSet.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\GUIContext.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\GUILayout_xmlHandler.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Image.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\ImageCodec.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\ImageManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\JustifiedRenderedString.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\JustifiedRenderedStringWordWrapper.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\KeyFrame.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\LeftAlignedRenderedString.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\LinkedEvent.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Logger.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\MouseCursor.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\NamedElement.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\NamedXMLResourceManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\PCRERegexMatcher.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\PixmapFont.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Property.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\PropertyHelper.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\PropertySet.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Quaternion.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Rect.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderedString.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderedStringComponent.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderedStringImageComponent.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderedStringTextComponent.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderedStringWidgetComponent.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderEffectManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderingSurface.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderingWindow.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderQueue.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RenderTarget.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\RightAlignedRenderedString.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Scheme.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\SchemeManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Scheme_xmlHandler.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\ScriptModule.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\SimpleTimer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\String.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\SubscriberSlot.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\System.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\SystemKeys.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\TextUtils.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Win32StringTranscoder.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\Window.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\WindowFactory.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\WindowFactoryManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\WindowManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\WindowRenderer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\WindowRendererManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\XMLAttributes.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\XMLHandler.cpp" >
+    <ClCompile Include="..\..\..\cegui\src\Affector.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Animation.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\AnimationInstance.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\AnimationManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Animation_xmlHandler.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Base.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\BasicImage.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\BasicRenderedStringParser.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\BidiVisualMapping.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\BoundSlot.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\CentredRenderedString.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\ChainedXMLHandler.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Clipboard.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Colour.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\ColourRect.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\CompositeResourceProvider.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Config_xmlHandler.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\CoordConverter.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\DataContainer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\DefaultLogger.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\DefaultRenderedStringParser.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\DefaultResourceProvider.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\DynamicModule.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Element.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Event.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\EventArgs.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\EventSet.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Exceptions.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\FactoryModule.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\FactoryRegisterer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Font.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\FontManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Font_xmlHandler.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\FormattedRenderedString.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\FreeTypeFont.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\GeometryBuffer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\GlobalEventSet.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\GUIContext.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\GUILayout_xmlHandler.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Image.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\ImageCodec.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\ImageManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\JustifiedRenderedString.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\JustifiedRenderedStringWordWrapper.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\KeyFrame.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\LeftAlignedRenderedString.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\LinkedEvent.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Logger.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\MouseCursor.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\NamedElement.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\NamedXMLResourceManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\PCRERegexMatcher.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\PixmapFont.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Property.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\PropertyHelper.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\PropertySet.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Quaternion.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Rect.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderedString.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderedStringComponent.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderedStringImageComponent.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderedStringTextComponent.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderedStringWidgetComponent.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderEffectManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderingSurface.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderingWindow.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderQueue.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RenderTarget.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\RightAlignedRenderedString.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Scheme.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\SchemeManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Scheme_xmlHandler.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\ScriptModule.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\SimpleTimer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\String.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\SubscriberSlot.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\System.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\SystemKeys.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\TextUtils.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\DashBoard.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Win32StringTranscoder.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\Window.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\WindowFactory.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\WindowFactoryManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\WindowManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\WindowRenderer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\WindowRendererManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\XMLAttributes.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\XMLHandler.cpp">
       <ObjectFileName>$(IntDir)/XMLHandler.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="..\..\..\cegui\src\XMLParser.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\XMLSerializer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ButtonBase.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ClippedContainer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Combobox.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ComboDropList.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\DefaultWindow.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\DragContainer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Editbox.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\FrameWindow.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\GridLayoutContainer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\GroupBox.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\HorizontalLayoutContainer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ItemEntry.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ItemListBase.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ItemListbox.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\LayoutCell.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\LayoutContainer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Listbox.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ListboxItem.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ListboxTextItem.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ListHeader.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ListHeaderSegment.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Menubar.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\MenuBase.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\MenuItem.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\MultiColumnList.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\MultiLineEditbox.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\PopupMenu.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ProgressBar.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\PushButton.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\RadioButton.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ScrollablePane.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Scrollbar.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ScrolledContainer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ScrolledItemListBase.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\SequentialLayoutContainer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Slider.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Spinner.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\TabButton.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\TabControl.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Thumb.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Titlebar.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\ToggleButton.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Tooltip.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\Tree.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\TreeItem.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\widgets\VerticalLayoutContainer.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\ComponentBase.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\Dimensions.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\EventAction.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\EventLinkDefinition.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\FormattingSetting.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\FrameComponent.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\ImageryComponent.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\ImagerySection.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\LayerSpecification.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\NamedArea.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\PropertyDefinitionBase.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\PropertyInitialiser.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\SectionSpecification.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\StateImagery.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\TextComponent.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\WidgetComponent.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\WidgetLookFeel.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\WidgetLookManager.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\XMLEnumHelper.cpp"  />
-    <ClCompile Include="..\..\..\cegui\src\falagard\XMLHandler.cpp" >
+    <ClCompile Include="..\..\..\cegui\src\XMLParser.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\XMLSerializer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ButtonBase.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ClippedContainer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Combobox.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ComboDropList.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\DefaultWindow.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\DragContainer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Editbox.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\FrameWindow.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\GridLayoutContainer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\GroupBox.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\HorizontalLayoutContainer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ItemEntry.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ItemListBase.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ItemListbox.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\LayoutCell.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\LayoutContainer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Listbox.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ListboxItem.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ListboxTextItem.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ListHeader.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ListHeaderSegment.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Menubar.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\MenuBase.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\MenuItem.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\MultiColumnList.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\MultiLineEditbox.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\PopupMenu.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ProgressBar.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\PushButton.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\RadioButton.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ScrollablePane.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Scrollbar.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ScrolledContainer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ScrolledItemListBase.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\SequentialLayoutContainer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Slider.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Spinner.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\TabButton.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\TabControl.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Thumb.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Titlebar.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\ToggleButton.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Tooltip.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\Tree.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\TreeItem.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\widgets\VerticalLayoutContainer.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\ComponentBase.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\Dimensions.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\EventAction.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\EventLinkDefinition.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\FormattingSetting.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\FrameComponent.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\ImageryComponent.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\ImagerySection.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\LayerSpecification.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\NamedArea.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\PropertyDefinitionBase.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\PropertyInitialiser.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\SectionSpecification.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\StateImagery.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\TextComponent.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\WidgetComponent.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\WidgetLookFeel.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\WidgetLookManager.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\XMLEnumHelper.cpp" />
+    <ClCompile Include="..\..\..\cegui\src\falagard\XMLHandler.cpp">
       <ObjectFileName>$(IntDir)/falagard/XMLHandler.cpp.obj</ObjectFileName>
     </ClCompile>
   </ItemGroup>

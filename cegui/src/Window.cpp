@@ -2765,6 +2765,7 @@ void Window::onDragDropItemDropped(DragDropEventArgs& e)
 //----------------------------------------------------------------------------//
 void Window::setWindowRenderer(const String& name)
 {
+    std::string stdString = CEGUIStringToStdString(name);
     if (d_windowRenderer && d_windowRenderer->getName() == name)
         return;
 

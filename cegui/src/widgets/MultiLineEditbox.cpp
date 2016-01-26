@@ -1325,6 +1325,7 @@ void MultiLineEditbox::onCharacter(KeyEventArgs& e)
        if (getText().length() - 1 < d_maxTextLen)
 		{
            String newText = getText();
+           std::string stdStr = CEGUI::CEGUIStringToStdString(newText);
            newText.insert(getCaretIndex(), 1, e.codepoint);
            setText(newText);
 
