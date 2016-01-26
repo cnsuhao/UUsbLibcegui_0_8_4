@@ -469,6 +469,9 @@
     <ClCompile Include="..\..\..\cegui\src\falagard\XMLHandler.cpp">
       <Filter>Source Files\falagard</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\cegui\src\widgets\DashBoard.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\cegui\include\CEGUI\Affector.h">
@@ -1112,6 +1115,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\cegui\include\CEGUI\falagard\XMLHandler.h">
       <Filter>Header Files\falagard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cegui\include\CEGUI\widgets\DashBoard.h">
+      <Filter>Header Files\widget</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -95,6 +95,8 @@ WindowManager::~WindowManager(void)
 *************************************************************************/
 Window* WindowManager::createWindow(const String& type, const String& name)
 {
+    std::string windowType = CEGUIStringToStdString(type);
+    std::string windowName = CEGUIStringToStdString(name);
     // only allow creation of Window objects if we are in unlocked state
     if (isLocked())
         CEGUI_THROW(InvalidRequestException(

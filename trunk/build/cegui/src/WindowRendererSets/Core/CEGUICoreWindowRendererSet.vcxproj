@@ -49,35 +49,36 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CEGUICoreWindowRendererSet.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CEGUICoreWindowRendererSet_d</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CEGUICoreWindowRendererSet.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CEGUICoreWindowRendererSet</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CEGUICoreWindowRendererSet.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CEGUICoreWindowRendererSet</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CEGUICoreWindowRendererSet.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CEGUICoreWindowRendererSet</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CEGUICoreWindowRendererSet.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CEGUICoreWindowRendererSet_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CEGUICoreWindowRendererSet.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CEGUICoreWindowRendererSet</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CEGUICoreWindowRendererSet.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CEGUICoreWindowRendererSet</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenSourceLib\cegui_0_8_4\trunk\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CEGUICoreWindowRendererSet.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CEGUICoreWindowRendererSet</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>D:\OpenSourceLib\cegui_0_8_4\trunk\build\cegui\include;D:\OpenSourceLib\cegui_0_8_4\trunk\cegui\include;D:\OpenSourceLib\cegui_0_8_4\trunk\cegui\include\WindowRendererSets\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -115,7 +116,8 @@
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUICoreWindowRendererSet_d.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/OpenSourceLib/cegui_0_8_4/trunk/build/bin/CEGUICoreWindowRendererSet_d.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -133,7 +135,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="Release";CEGUICOREWINDOWRENDERERSET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -157,7 +160,8 @@
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUICoreWindowRendererSet.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/OpenSourceLib/cegui_0_8_4/trunk/build/bin/CEGUICoreWindowRendererSet.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -175,7 +179,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="MinSizeRel";CEGUICOREWINDOWRENDERERSET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -199,7 +204,8 @@
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUICoreWindowRendererSet.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/OpenSourceLib/cegui_0_8_4/trunk/build/bin/CEGUICoreWindowRendererSet.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -241,7 +247,8 @@
       <ImportLibrary>D:/OpenSourceLib/cegui_0_8_4/trunk/build/lib/CEGUICoreWindowRendererSet.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/OpenSourceLib/cegui_0_8_4/trunk/build/bin/CEGUICoreWindowRendererSet.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -301,6 +308,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\Button.h" />
+    <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\DashBoardRenderer.h" />
     <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\Default.h" />
     <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\Editbox.h" />
     <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\FrameWindow.h" />
@@ -328,34 +336,35 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\ToggleButton.h" />
     <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\Tooltip.h" />
     <ClInclude Include="..\..\..\..\..\cegui\include\CEGUI\WindowRendererSets\Core\Tree.h" />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Button.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Default.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Editbox.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\FrameWindow.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ItemEntry.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ItemListbox.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Listbox.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ListHeader.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ListHeaderSegment.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Menubar.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\MenuItem.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Module.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\MultiColumnList.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\MultiLineEditbox.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\PopupMenu.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ProgressBar.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ScrollablePane.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Scrollbar.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Slider.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Static.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\StaticImage.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\StaticText.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\TabButton.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\TabControl.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Titlebar.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ToggleButton.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Tooltip.cpp"  />
-    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Tree.cpp"  />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Button.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\DashBoardRenderer.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Default.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Editbox.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\FrameWindow.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ItemEntry.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ItemListbox.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Listbox.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ListHeader.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ListHeaderSegment.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Menubar.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\MenuItem.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Module.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\MultiColumnList.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\MultiLineEditbox.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\PopupMenu.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ProgressBar.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ScrollablePane.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Scrollbar.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Slider.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Static.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\StaticImage.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\StaticText.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\TabButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\TabControl.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Titlebar.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\ToggleButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Tooltip.cpp" />
+    <ClCompile Include="..\..\..\..\..\cegui\src\WindowRendererSets\Core\Tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:/OpenSourceLib/cegui_0_8_4/trunk/build/cegui/src/CEGUIBase-0.vcxproj">
