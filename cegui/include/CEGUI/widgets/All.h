@@ -66,5 +66,6 @@
 #include "./Tree.h"
 #include "./TreeItem.h"
 #include "./VerticalLayoutContainer.h"
+#include "./DashBoard.h"
 
 #endif // End of guard _CEGUIAll_h_

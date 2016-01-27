@@ -662,6 +662,7 @@ void System::addStandardWindowFactories()
     WindowFactoryManager::addWindowType<HorizontalLayoutContainer>();
     WindowFactoryManager::addWindowType<VerticalLayoutContainer>();
     WindowFactoryManager::addWindowType<GridLayoutContainer>();
+    WindowFactoryManager::addWindowType<DashBoard>();
 }
 
 void System::createSingletons()

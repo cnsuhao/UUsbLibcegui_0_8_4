@@ -102,7 +102,7 @@ namespace CEGUI
 
         // create handler object
         Falagard_xmlHandler handler(this);
-
+        std::string fileNameStr = CEGUIStringToStdString(filename);
         // perform parse of XML data
         CEGUI_TRY
         {

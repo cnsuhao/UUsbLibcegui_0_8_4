@@ -3,6 +3,8 @@
 // Start of CEGUI namespace section
 namespace CEGUI
 {
+    const String DashBoard::EventNamespace("DashBoard");
+    const String DashBoard::WidgetTypeName("CEGUI/DashBoard");
     DashBoard::DashBoard(const String& type, const String& name) :
         Window(type, name)
     {
