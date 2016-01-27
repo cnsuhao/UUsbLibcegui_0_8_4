@@ -13,6 +13,9 @@ namespace CEGUI
     class CEGUIEXPORT DashBoard : public Window
     {
     public:
+        static const String EventNamespace;				//!< Namespace for global events
+        static const String WidgetTypeName;             //!< Window factory name
+
         DashBoard(const String& type, const String& name);
         virtual ~DashBoard(void);
         float getCurValue();

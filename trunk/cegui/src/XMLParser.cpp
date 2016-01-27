@@ -58,7 +58,7 @@ namespace CEGUI
         // Acquire resource using CEGUI ResourceProvider
         RawDataContainer rawXMLData;
         System::getSingleton().getResourceProvider()->loadRawDataContainer(filename, rawXMLData, resourceGroup);
-
+        std::string schemaNameStr = CEGUIStringToStdString(schemaName);
         try
         {
             // The actual parsing action (this is overridden and depends on the specific parser)

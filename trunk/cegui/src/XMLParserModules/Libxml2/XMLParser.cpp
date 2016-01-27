@@ -57,7 +57,7 @@ void processXMLElement(XMLHandler& handler, xmlNode* node)
 
     // element start processing
     handler.elementStart(reinterpret_cast<const encoded_char*>(node->name), attrs);
-
+    int i = 0; 
     for (xmlNode* cur_node = node->children; cur_node; cur_node = cur_node->next)
     {
         switch(cur_node->type)
@@ -74,6 +74,7 @@ void processXMLElement(XMLHandler& handler, xmlNode* node)
         default:
             break;
         }
+        i++;
     }
 
     // element end processing
@@ -100,7 +101,7 @@ void LibxmlParser::parseXML(XMLHandler& handler,
     if (!doc)
     {
         xmlError* err = xmlGetLastError();
-
+        
         CEGUI_THROW(GenericException(
             String("xmlParseMemory failed in file: '") +
             err->file + "' at line number" +
