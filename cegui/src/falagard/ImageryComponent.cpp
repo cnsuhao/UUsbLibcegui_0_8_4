@@ -199,7 +199,7 @@ namespace CEGUI
         const Rectf* clippingRect;
         finalRect.top(ypos);
         finalRect.bottom(ypos + imgSz.d_height);
-
+        // vertTiles∫ÕhorzTiles « ≤√¥£ø£ø£ø£ø
         for (uint row = 0; row < vertTiles; ++row)
         {
             finalRect.left(xpos);

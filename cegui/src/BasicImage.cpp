@@ -191,7 +191,7 @@ void BasicImage::render(GeometryBuffer& buffer, const Rectf& dest_area,
     // apply rendering offset to the destination Rect
     dest.offset(d_scaledOffset);
 
-    // get the rect area that we will actually draw to (i.e. perform clipping)
+    // get the rect area that we will actually draw to (i.e. perform clipping) 用dest对*clip_area进行裁剪
     Rectf final_rect(clip_area ? dest.getIntersection(*clip_area) : dest );
 
     // check if rect was totally clipped
@@ -206,7 +206,7 @@ void BasicImage::render(GeometryBuffer& buffer, const Rectf& dest_area,
     const Rectf tex_rect((d_area.d_min + ((final_rect.d_min - dest.d_min) * tex_per_pix)) * scale,
                           (d_area.d_max + ((final_rect.d_max - dest.d_max) * tex_per_pix)) * scale);
 
-    // URGENT FIXME: Shouldn't this be in the hands of the user?
+    // URGENT FIXME: Shouldn't this be in the hands of the user? 做四舍五入处理
     final_rect.d_min.d_x = CoordConverter::alignToPixels(final_rect.d_min.d_x);
     final_rect.d_min.d_y = CoordConverter::alignToPixels(final_rect.d_min.d_y);
     final_rect.d_max.d_x = CoordConverter::alignToPixels(final_rect.d_max.d_x);
