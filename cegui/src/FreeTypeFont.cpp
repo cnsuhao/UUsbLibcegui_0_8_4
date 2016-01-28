@@ -174,6 +174,8 @@ uint FreeTypeFont::getTextureSize(CodepointMap::const_iterator s,
 //----------------------------------------------------------------------------//
 void FreeTypeFont::rasterise(utf32 start_codepoint, utf32 end_codepoint) const
 {
+    int errorCode = System::getSingleton().getRenderer()->GetErrorCode();
+
     CodepointMap::iterator s = d_cp_map.lower_bound(start_codepoint);
     if (s == d_cp_map.end())
         return;
@@ -190,6 +192,7 @@ void FreeTypeFont::rasterise(utf32 start_codepoint, utf32 end_codepoint) const
 
         const String texture_name(d_name + "_auto_glyph_images_" +
                                    PropertyHelper<int>::toString(s->first));
+        int errorCode = System::getSingleton().getRenderer()->GetErrorCode();
         Texture& texture = System::getSingleton().getRenderer()->createTexture(
             texture_name, Sizef(static_cast<float>(texsize), static_cast<float>(texsize)));
         d_glyphTextures.push_back(&texture);

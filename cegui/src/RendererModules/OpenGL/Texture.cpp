@@ -34,6 +34,19 @@
 // Start of CEGUI namespace section
 namespace CEGUI
 {
+
+    int XWGetError()
+    {
+        int errorCode = glGetError();
+        if (errorCode != 0)
+        {
+            return errorCode;
+        }
+        else
+        {
+            return 0;
+        }
+    }
 //----------------------------------------------------------------------------//
 OpenGLTexture::OpenGLTexture(OpenGLRendererBase& owner, const String& name) :
     d_size(0, 0),
@@ -43,8 +56,11 @@ OpenGLTexture::OpenGLTexture(OpenGLRendererBase& owner, const String& name) :
     d_owner(owner),
     d_name(name)
 {
+    XWGetError();
     initInternalPixelFormatFields(PF_RGBA);
+    XWGetError();
     generateOpenGLTexture();
+    XWGetError();
 }
 
 //----------------------------------------------------------------------------//
@@ -57,6 +73,7 @@ OpenGLTexture::OpenGLTexture(OpenGLRendererBase& owner, const String& name,
     d_owner(owner),
     d_name(name)
 {
+    XWGetError();
     initInternalPixelFormatFields(PF_RGBA);
     generateOpenGLTexture();
     loadFromFile(filename, resourceGroup);
@@ -71,6 +88,8 @@ OpenGLTexture::OpenGLTexture(OpenGLRendererBase& owner, const String& name,
     d_owner(owner),
     d_name(name)
 {
+    // 1282 GL_INVALID_OPERATION
+    XWGetError();
     initInternalPixelFormatFields(PF_RGBA);
     generateOpenGLTexture();
     setTextureSize(size);
@@ -86,6 +105,7 @@ OpenGLTexture::OpenGLTexture(OpenGLRendererBase& owner, const String& name,
     d_owner(owner),
     d_name(name)
 {
+    XWGetError();
     initInternalPixelFormatFields(PF_RGBA);
     updateCachedScaleValues();
 }
@@ -93,6 +113,7 @@ OpenGLTexture::OpenGLTexture(OpenGLRendererBase& owner, const String& name,
 //----------------------------------------------------------------------------//
 void OpenGLTexture::initInternalPixelFormatFields(const PixelFormat fmt)
 {
+    XWGetError();
     d_isCompressed = false;
 
     switch (fmt)
@@ -150,6 +171,7 @@ void OpenGLTexture::initInternalPixelFormatFields(const PixelFormat fmt)
 //----------------------------------------------------------------------------//
 OpenGLTexture::~OpenGLTexture()
 {
+    XWGetError();
     cleanupOpenGLTexture();
 }
 
@@ -181,6 +203,7 @@ const Vector2f& OpenGLTexture::getTexelScaling() const
 void OpenGLTexture::loadFromFile(const String& filename,
     const String& resourceGroup)
 {
+    XWGetError();
     // Note from PDT:
     // There is somewhat tight coupling here between OpenGLTexture and the
     // ImageCodec classes - we have intimate knowledge of how they are
@@ -210,6 +233,7 @@ void OpenGLTexture::loadFromFile(const String& filename,
         CEGUI_THROW(RendererException(
             sys->getImageCodec().getIdentifierString() +
             " failed to load image '" + filename + "'."));
+    XWGetError();
 }
 
 //----------------------------------------------------------------------------//
@@ -228,6 +252,7 @@ void OpenGLTexture::loadFromMemory(const void* buffer, const Sizef& buffer_size,
     updateCachedScaleValues();
 
     blitFromMemory(buffer, Rectf(Vector2f(0, 0), buffer_size));
+    XWGetError();
 }
 
 //----------------------------------------------------------------------------//
@@ -247,6 +272,7 @@ void OpenGLTexture::loadUncompressedTextureBuffer(const Rectf& dest_area,
                     d_format, d_subpixelFormat, buffer);
 
     glPixelStorei(GL_UNPACK_ALIGNMENT, old_pack);
+    XWGetError();
 }
 
 //----------------------------------------------------------------------------//
@@ -272,6 +298,7 @@ GLsizei OpenGLTexture::getCompressedTextureSize(const Sizef& pixel_size) const
     {
         blocksize = 8;
     }
+    XWGetError();
 
     return (
         static_cast<GLsizei>(
@@ -283,6 +310,7 @@ GLsizei OpenGLTexture::getCompressedTextureSize(const Sizef& pixel_size) const
 //----------------------------------------------------------------------------//
 void OpenGLTexture::setTextureSize(const Sizef& sz)
 {
+    XWGetError();
     initInternalPixelFormatFields(PF_RGBA);
 
     setTextureSize_impl(sz);
@@ -294,9 +322,10 @@ void OpenGLTexture::setTextureSize(const Sizef& sz)
 //----------------------------------------------------------------------------//
 void OpenGLTexture::setTextureSize_impl(const Sizef& sz)
 {
+    XWGetError();
     const Sizef size(d_owner.getAdjustedTextureSize(sz));
     d_size = size;
-
+    GLenum glErrorCode = glGetError();
     // make sure size is within boundaries
     GLfloat maxSize;
     glGetFloatv(GL_MAX_TEXTURE_SIZE, &maxSize);
@@ -333,6 +362,7 @@ void OpenGLTexture::setTextureSize_impl(const Sizef& sz)
 //----------------------------------------------------------------------------//
 void OpenGLTexture::grabTexture()
 {
+    XWGetError();
     // if texture has already been grabbed, do nothing.
     if (d_grabBuffer)
         return;
@@ -358,11 +388,13 @@ void OpenGLTexture::restoreTexture()
     // free the grabbuffer
     delete [] d_grabBuffer;
     d_grabBuffer = 0;
+    XWGetError();
 }
 
 //----------------------------------------------------------------------------//
 void OpenGLTexture::blitFromMemory(const void* sourceData, const Rectf& area)
 {
+    XWGetError();
     // save old texture binding
     GLuint old_tex;
     glGetIntegerv(GL_TEXTURE_BINDING_2D, reinterpret_cast<GLint*>(&old_tex));
@@ -382,6 +414,7 @@ void OpenGLTexture::blitFromMemory(const void* sourceData, const Rectf& area)
 //----------------------------------------------------------------------------//
 void OpenGLTexture::blitToMemory(void* targetData)
 {
+    XWGetError();
     // save existing config
     GLuint old_tex;
     glGetIntegerv(GL_TEXTURE_BINDING_2D, reinterpret_cast<GLint*>(&old_tex));
@@ -444,6 +477,9 @@ void OpenGLTexture::updateCachedScaleValues()
 //----------------------------------------------------------------------------//
 void OpenGLTexture::generateOpenGLTexture()
 {
+    {
+        GLenum glErrorCode = glGetError(); 
+    }
     // save old texture binding
     GLuint old_tex;
     glGetIntegerv(GL_TEXTURE_BINDING_2D, reinterpret_cast<GLint*>(&old_tex));
@@ -464,6 +500,8 @@ void OpenGLTexture::generateOpenGLTexture()
 
     // restore previous texture binding.
     glBindTexture(GL_TEXTURE_2D, old_tex);
+
+    GLenum glErrorCode = glGetError();
 }
 
 //----------------------------------------------------------------------------//
@@ -502,6 +540,7 @@ void OpenGLTexture::setOpenGLTexture(GLuint tex, const Sizef& size)
 
     d_dataSize = d_size = size;
     updateCachedScaleValues();
+    XWGetError();
 }
 
 //----------------------------------------------------------------------------//

@@ -16,10 +16,18 @@ namespace CEGUI
 
     void FalagardDashBoard::render()
     {
+
         DashBoard* w = (DashBoard*) d_window;
         const WidgetLookFeel& wlf = getLookNFeel();
+        size_t childCount = d_window->getChildCount();
+        for (size_t i = 0; i < childCount; ++i)
+        {
+            d_window->getChildAtIdx(i)->render();
+        }
+        return;
         // 先画背景
         wlf.getImagerySection("Background").render(*w);
+        wlf.getImagerySection("Needle").render(*w);
 
         // 再画指针，得知道指针的中心点，如何旋转图片
         float curAngle = w->getCurAngle();

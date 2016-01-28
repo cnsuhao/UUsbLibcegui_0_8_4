@@ -62,6 +62,7 @@ const String& GUILayout_xmlHandler::getDefaultResourceGroup() const
 
 void GUILayout_xmlHandler::elementStart(const String& element, const XMLAttributes& attributes)
 {
+	std::string elementStr = CEGUIStringToStdString(element);
 	// handle root GUILayoutElement element
 	if (element == GUILayoutElement)
 	{
