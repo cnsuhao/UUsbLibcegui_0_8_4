@@ -63,6 +63,7 @@ struct mat4Pimpl;
 class OPENGL_GUIRENDERER_API OpenGLRendererBase : public Renderer
 {
 public:
+    virtual int GetErrorCode();
     // implement Renderer interface
     RenderTarget& getDefaultRenderTarget();
     GeometryBuffer& createGeometryBuffer();

@@ -202,9 +202,23 @@ Texture& OpenGLRendererBase::createTexture(const String& name,
     return *tex;
 }
 
+int OpenGLRendererBase::GetErrorCode()
+{
+    GLenum glErrorCode = glGetError();
+    if (glErrorCode != 0)
+    {
+        return glErrorCode;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
 //----------------------------------------------------------------------------//
 Texture& OpenGLRendererBase::createTexture(const String& name, const Sizef& size)
 {
+
     if (d_textures.find(name) != d_textures.end())
         CEGUI_THROW(AlreadyExistsException(
             "A texture named '" + name + "' already exists."));

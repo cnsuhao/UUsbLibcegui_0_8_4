@@ -27,6 +27,7 @@
 #include "CEGUI/LeftAlignedRenderedString.h"
 #include "CEGUI/RenderedString.h"
 #include "CEGUI/Vector.h"
+#include "CEGUI/System.h"
 
 // Start of CEGUI namespace section
 namespace CEGUI
@@ -83,6 +84,7 @@ float LeftAlignedRenderedString::getHorizontalExtent(const Window* ref_wnd) cons
 //----------------------------------------------------------------------------//
 float LeftAlignedRenderedString::getVerticalExtent(const Window* ref_wnd) const
 {
+    int errorCode = System::getSingleton().getRenderer()->GetErrorCode();
     float h = 0.0f;
     for (size_t i = 0; i < d_renderedString->getLineCount(); ++i)
         h += d_renderedString->getPixelSize(ref_wnd, i).d_height;

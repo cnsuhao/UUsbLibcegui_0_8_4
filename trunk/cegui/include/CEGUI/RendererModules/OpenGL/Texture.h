@@ -40,6 +40,7 @@
 // Start of CEGUI namespace section
 namespace CEGUI
 {
+    int CEGUIEXPORT XWGetError();
 //! Texture implementation for the OpenGLRenderer.
 class OPENGL_GUIRENDERER_API OpenGLTexture : public Texture
 {

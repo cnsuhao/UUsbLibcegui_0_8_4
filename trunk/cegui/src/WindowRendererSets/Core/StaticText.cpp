@@ -372,6 +372,7 @@ namespace CEGUI
     *************************************************************************/
     bool FalagardStaticText::onTextChanged(const EventArgs&)
     {
+        int errorCode = System::getSingleton().getRenderer()->GetErrorCode();
         d_formatValid = false;
         configureScrollbars();
         d_window->invalidate();

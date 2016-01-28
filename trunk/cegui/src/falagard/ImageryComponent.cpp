@@ -102,6 +102,7 @@ namespace CEGUI
 
     void ImageryComponent::render_impl(Window& srcWindow, Rectf& destRect, const CEGUI::ColourRect* modColours, const Rectf* clipper, bool /*clipToDisplay*/) const
     {
+        std::string imageName = CEGUIStringToStdString(d_imagePropertyName);
         // get final image to use.
         const Image* img = isImageFetchedFromProperty() ?
             srcWindow.getProperty<Image*>(d_imagePropertyName) :
@@ -261,7 +262,8 @@ namespace CEGUI
 
     bool ImageryComponent::isImageFetchedFromProperty() const
     {
-        return !d_imagePropertyName.empty();
+        bool result = d_imagePropertyName.empty();
+        return !result;
     }
 
     const String& ImageryComponent::getImagePropertySource() const

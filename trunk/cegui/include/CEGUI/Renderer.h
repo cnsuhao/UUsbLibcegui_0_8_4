@@ -83,6 +83,7 @@ class CEGUIEXPORT Renderer :
     public AllocatedObject<Renderer>
 {
 public:
+    virtual int GetErrorCode(){ return 0; }
     /*!
     \brief
         Returns the default RenderTarget object.  The default render target is
