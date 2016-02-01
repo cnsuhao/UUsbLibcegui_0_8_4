@@ -10,6 +10,7 @@
 #endif
 namespace CEGUI
 {
+    class AnimationInstance;
     class CEGUIEXPORT DashBoard : public Window
     {
     public:
@@ -20,13 +21,18 @@ namespace CEGUI
         virtual ~DashBoard(void);
         float getCurValue();
         float getCurAngle();
+        void setValue(float value);
     protected:
+        bool OnWindowCreated(const CEGUI::EventArgs& args);
+        virtual void OnCreated(WindowEventArgs& e);
+        bool OnNeedleRotated(const CEGUI::EventArgs& args);
         float m_fCurValue;
         float m_fMinValue;
         float m_fMaxValue;
 
         float m_fMinAngle;
         float m_fMaxAngle;
+        AnimationInstance* m_pNeedleAnimationInstance;
     private:
     };
 }
