@@ -132,7 +132,7 @@ Window* WindowManager::createWindow(const String& type, const String& name)
     // fire event to notify interested parites about the new window.
     WindowEventArgs args(newWindow);
     fireEvent(EventWindowCreated, args, EventNamespace);
-    
+    newWindow->OnCreated(args);
 	return newWindow;
 }
 

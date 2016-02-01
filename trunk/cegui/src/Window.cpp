@@ -283,7 +283,9 @@ Window::Window(const String& type, const String& name):
     d_fontRenderSizeChangeConnection(
         GlobalEventSet::getSingleton().subscribeEvent(
             "Font/RenderSizeChanged",
-            Event::Subscriber(&Window::handleFontRenderSizeChange, this)))
+            Event::Subscriber(&Window::handleFontRenderSizeChange, this))),
+    d_pivotVerticalAlignment(VerticalAlignment::VA_CENTRE),
+    d_pivotHorizontalAlignment(HorizontalAlignment::HA_CENTRE)
 {
     // add properties
     addWindowProperties();
@@ -3361,10 +3363,52 @@ void Window::onRotated(ElementEventArgs& e)
 
     // Checks / setup complete!  Now we can finally set the rotation.
     static_cast<RenderingWindow*>(d_surface)->setRotation(d_rotation);
+    //static_cast<RenderingWindow*>(d_surface)->setPivot(
+    //    Vector3f(d_pixelSize.d_width / 2.0f, d_pixelSize.d_height / 2.0f, 0.0f));
+    float pivotX = 0.0f;
+    float pivotY = 0.0f;
+    switch (d_horizontalAlignment)
+    {
+    case HA_LEFT:
+        pivotX = 0;
+        break;
+    case HA_CENTRE:
+        pivotX = d_pixelSize.d_width / 2.0f;
+        break;
+    case HA_RIGHT:
+        pivotX = d_pixelSize.d_width;
+        break;
+    default:
+        break;
+    }
+    switch (d_verticalAlignment)
+    {
+    case VA_TOP:
+        pivotY = 0;
+        break;
+    case VA_CENTRE:
+        pivotY = d_pixelSize.d_height / 2.0f;
+        break;
+    case VA_BOTTOM:
+        pivotY = d_pixelSize.d_height;
+        break;
+    default:
+        break;
+    }
     static_cast<RenderingWindow*>(d_surface)->setPivot(
-        Vector3f(d_pixelSize.d_width / 2.0f, d_pixelSize.d_height / 2.0f, 0.0f));
+        Vector3f(pivotX, pivotY, 0.0f));
 }
 
+
+void Window::setPivotVerticalAlignment(const VerticalAlignment alignment)
+{
+    d_pivotVerticalAlignment = alignment;
+}
+
+void Window::setPivotHorizontalAlignment(const HorizontalAlignment alignment)
+{
+    d_pivotHorizontalAlignment = alignment;
+}
 //----------------------------------------------------------------------------//
 const RenderedString& Window::getRenderedString() const
 {

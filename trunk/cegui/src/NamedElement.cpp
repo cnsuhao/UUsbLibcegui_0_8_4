@@ -194,7 +194,7 @@ NamedElement* NamedElement::getChildByNamePath_impl(const String& name_path) con
 {
     const size_t sep = name_path.find_first_of('/');
     const String base_child(name_path.substr(0, sep));
-
+    std::string baseChild = CEGUIStringToStdString(base_child);
     const size_t child_count = d_children.size();
 
     for (size_t i = 0; i < child_count; ++i)
@@ -204,7 +204,8 @@ NamedElement* NamedElement::getChildByNamePath_impl(const String& name_path) con
 
         if (!named_child)
             continue;
-
+        String nameStr = named_child->getName();
+        std::string childName = CEGUIStringToStdString(nameStr);
         if (named_child->getName() == base_child)
         {
             if (sep != String::npos && sep < name_path.length() - 1)

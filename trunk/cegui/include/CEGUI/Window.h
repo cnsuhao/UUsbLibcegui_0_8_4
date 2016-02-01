@@ -2692,6 +2692,8 @@ public:
     // overridden from Element
     const Sizef& getRootContainerSize() const;
 
+    virtual void setPivotVerticalAlignment(const VerticalAlignment alignment);
+    virtual void setPivotHorizontalAlignment(const HorizontalAlignment alignment);
 protected:
     // friend classes for construction / initialisation purposes (for now)
     friend class System;
@@ -3221,7 +3223,7 @@ protected:
     virtual void onTextParsingChanged(WindowEventArgs& e);
 
     virtual void onMarginChanged(WindowEventArgs& e);
-
+    virtual void OnCreated(WindowEventArgs& e){};
     /*************************************************************************
         Implementation Functions
     *************************************************************************/
@@ -3698,6 +3700,9 @@ private:
 
     //! connection for event listener for font render size changes.
     Event::ScopedConnection d_fontRenderSizeChangeConnection;
+
+    VerticalAlignment d_pivotVerticalAlignment;
+    HorizontalAlignment d_pivotHorizontalAlignment;
 };
 
 } // End of  CEGUI namespace section
